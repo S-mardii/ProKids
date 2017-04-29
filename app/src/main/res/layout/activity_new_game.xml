@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.camitss.user.prokids.activity.newGameActivity"
+    tools:layout_editor_absoluteY="25dp"
+    android:background="@color/colorAccent"
+    tools:layout_editor_absoluteX="0dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="393dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@color/cyan_500"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="-11dp" />
+
+    <TextView
+        android:id="@+id/name_ask"
+        android:layout_width="246dp"
+        android:layout_height="95dp"
+        android:text="TextView"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteY="127dp"
+        tools:text="What is your Name?"
+        tools:layout_editor_absoluteX="81dp" />
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textSize="33sp"
+        tools:layout_editor_absoluteY="330dp"
+        tools:layout_editor_absoluteX="9dp" />
+
+    <Button
+        android:id="@+id/confirm_name"
+        android:layout_width="183dp"
+        android:layout_height="77dp"
+        android:text="confirm"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="432dp" />
+
+</android.support.constraint.ConstraintLayout>

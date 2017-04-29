@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitXY"
+    android:src="@drawable/backgroundmenu"
+    tools:ignore="ContentDescription" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="TECHGIRL"
+    tools:ignore="HardcodedText,SpUsage"
+    android:textSize="40dp"
+    android:layout_marginTop="60dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FANTASY"
+        tools:ignore="HardcodedText,SpUsage"
+        android:textSize="40dp"
+        android:layout_marginTop="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+    android:text="@string/play"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/play"
+    android:padding="30dp"
+    android:layout_centerVertical="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    tools:ignore="RelativeOverlap" />
+
+    <Button
+    android:text="@string/tutorial"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/tutorial"
+    android:padding="30dp"
+    android:layout_below="@+id/play"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+    <Button
+    android:text="@string/hallFrame"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/hallFrame"
+    android:padding="30dp"
+    android:layout_below="@+id/tutorial"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+    <FrameLayout
+        android:id="@+id/menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/scrim"
+        android:visibility="invisible"
+        >
+
+        <com.ogaclejapan.arclayout.ArcLayout
+            android:id="@+id/arc_layout"
+            android:layout_width="match_parent"
+            android:layout_height="611dp"
+            android:layout_marginBottom="32dp"
+            app:arc_axisRadius="@dimen/layout_child_offset_path"
+            app:arc_freeAngle="true"
+            app:arc_origin="bottom|left"
+            app:arc_radius="@dimen/layout_radius_path">
+
+            <Button
+                style="@style/Item.Path"
+                android:text="A"
+                android:textColor="@color/path_orange"
+                app:arc_angle="15"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                style="@style/Item.Path"
+                android:text="B"
+                android:textColor="@color/path_blue"
+                app:arc_angle="35"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                style="@style/Item.Path"
+                android:text="C"
+                android:textColor="@color/path_black"
+                app:arc_angle="55"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                style="@style/Item.Path"
+                android:text="D"
+                android:textColor="@color/path_green"
+                app:arc_angle="75"
+                tools:ignore="HardcodedText" />
+
+
+
+        </com.ogaclejapan.arclayout.ArcLayout>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/fab"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="-20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="-20dp"
+        android:background="@drawable/settings"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
+
+
